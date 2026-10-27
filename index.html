@@ -123,7 +123,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Hosted Item 1 -->
-                    <a href="https://status.gioco.lol" target="_blank" class="brutal-card reveal p-6 flex items-center justify-between group">
+                    <a href="https://status.gioco.help" target="_blank" class="brutal-card reveal p-6 flex items-center justify-between group">
                         <div>
                             <h3 class="text-xl font-bold mb-1 uppercase">Network Status</h3>
                             <p class="text-sm muted-text text-[#2d2c28]/70">Real-time uptime and incidents.</p>
@@ -226,16 +226,18 @@
          */
         const NETWORK_DATA = {
             "CREATIVITATIS": [
-                { name: "Creativitatis", url: "https://creativitatis.dev", description: "Soon™" },
-                { name: "Creativitatis Blog", url: "https://creativitatis.blog", description: "The blog - Soon™" },
+                { name: "CREATIVITATIS", url: "https://creativitatis.dev", description: "Soon™" },
+                { name: "CREATIVITATIS.blog", url: "https://creativitatis.blog", description: "The blog - Soon™" },
+                { name: "CREATIVITATIS.studio", url: "https://creativitatis.studio", description: "Yes, we also make games :p" },
             ],
-            "CREEPERHUB ECOSYSTEM": [
+            "CREEPERHUB ECOSYSTEM (Deprecated)": [
                 { name: "CreeperHUB", url: "https://creeperhub.net", description: "Ex-main hub, soon v3.0" },
-                { name: "CreeperHUB.com", url: "https://about.creeperhub.com", description: "CreeperHUB hosted side projects" },
+                { name: "CreeperHUB.com", url: "#", description: "CreeperHUB hosted side projects", status: "current"  },
+                { name: "tinyy.dev", url: "https://tinyy.dev", description: "Short links for projects + articles" },
             ],
             "UTILITIES & APPS": [
                 { name: "creepers.sbs", url: "https://creepers.sbs", description: "Free subdomain service" },
-                { name: "Shrinkify", url: "https://shrinkify.club", description: "URL shortener" },
+                { name: "Shrinkify", url: "https://shrinkify.club", description: "URL shortener"},
                 { name: "askfor.pics", url: "https://askfor.pics", description: "Link-In-Bio" },
             ],
             "OTAKUFORGE":  [
@@ -245,14 +247,17 @@
             ],
             "THE CREATOR": [
                 { name: "Giocoliere", url: "https://giocoliere.dev", description: "Personal Wesbsite v0.7 :P" },
-                { name: "gioco.help", url: "#", description: "Support portal + archives", status: "current" },
+                { name: "gioco.help", url: "https://gioco.help", description: "Support portal + archives", status: "current" },
+                { name: "Juggler's Blog", url: "https://juggler.blog", description: "Blog" },
             ],
-            "SHORT URL": [
-                { name: "tinyy.dev", url: "https://tinyy.dev", description: "Short links for projects + articles" },
-                { name: "MClink", url: "https://mc-l.ink", description: "Short URL for Minecraft related content"   },
+            "INFRASTRUCTURE": [
+                
+                { name: "CREATIVITATIS.repos", url: "https://git.creativitatis.dev/", description: "Self-hosted repositories" },
+                { name: "CREATIVITATIS.status", url: "https://status.creativitatis.dev/", description: "Infrastructure status" },
+                { name: "CREATIVITATIS.pages", url: "https://pages.creativitatis.dev/", description: "Internal publishing service" }
             ],
             "CREEPERCRAFT": [
-                { name: "Creepercraft", url: "https://creepercraft.net", description: "Minecraft server coming soon" },
+                { name: "CREEPERCRAFT", url: "https://creepercraft.net", description: "Minecraft server, coming soon" },
             ],
             "CREEPERLAB": [
                 { name: "CreeperLAB", url: "https://creeperlab.org", description: "Sources for Minecraft Devs" },
@@ -264,7 +269,7 @@
             root.innerHTML = `
                 <div class="fixed top-0 left-0 right-0 z-[9999] flex items-center px-4 sm:px-6 h-9 justify-between transition-all duration-200 border-b-2 border-[#2d2c28]" 
                      style="background-color: var(--gioco-header-bg); color: var(--gioco-header-text);">
-                    <a href="https://creativitatis.dev" class="text-xs font-black tracking-widest uppercase hover:bg-[#2d2c28] hover:text-[#e1dad4] px-2 py-1 transition-colors flex items-center gap-2">
+                    <a href="https://about.creeperhub.com" class="text-xs font-black tracking-widest uppercase hover:bg-[#2d2c28] hover:text-[#e1dad4] px-2 py-1 transition-colors flex items-center gap-2">
                         <span class="w-2 h-2 bg-[#b28f73] rounded-none"></span>
                         GIOCO.HELP
                     </a>
